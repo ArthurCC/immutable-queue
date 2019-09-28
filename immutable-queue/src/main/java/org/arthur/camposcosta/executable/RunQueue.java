@@ -1,5 +1,6 @@
 package org.arthur.camposcosta.executable;
 
+import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.logging.Level;
@@ -77,6 +78,14 @@ public class RunQueue {
 			emptyQueue.deQueue();
 		} catch (EmptyQueueException e) {
 			LOGGER.log(Level.INFO, "Impossible to remove from empty queue", e);
+		}
+		
+		// Wait until user press enter
+		System.out.println("Press enter to exit");
+		try {
+			System.in.read();
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
 	}
 }
