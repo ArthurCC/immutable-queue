@@ -8,3 +8,5 @@ To run this project on your local machine :
 2) perform "maven clean install"
 3) Execute the jar "immutable-queue-0.0.1-SNAPSHOT-jar-with-dependencies.jar" generated in the "target" directory of your project.
    java -jar immutable-queue-0.0.1-SNAPSHOT-jar-with-dependencies.jar 
+   
+Or directly download the jar uploaded in this repository
