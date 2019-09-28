@@ -90,4 +90,12 @@ public final class QueueImpl<T> implements Queue<T> {
 	public boolean isEmpty() {
 		return queueList.isEmpty();
 	}
+
+	/**
+	 * toString
+	 */
+	@Override
+	public String toString() {
+		return "[queueList=" + queueList + "]";
+	}
 }
