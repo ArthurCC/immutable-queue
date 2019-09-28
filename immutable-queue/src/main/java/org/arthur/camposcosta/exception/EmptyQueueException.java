@@ -14,7 +14,7 @@ public class EmptyQueueException extends Exception {
 
 	/**
 	 * Constructor of the exception that logs the error message
-	 * @param message
+	 * @param message the message to log
 	 */
 	public EmptyQueueException(String message) {
 		super(message);

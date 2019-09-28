@@ -49,8 +49,8 @@ public class RunQueue {
 		}
 		
 		System.out.println("\nRemove element\n");
-		System.out.println("Verify immutability of second queue " + queue2 + "\n");
-		System.out.println("Verify suppression of element 1" + queue3 + "\n");
+		System.out.println("Verify immutability of second queue " + queue2);
+		System.out.println("Verify suppression of element 0" + queue3);
 		
 		// display heads
 		System.out.println("\nDisplay heads\n");
@@ -66,7 +66,7 @@ public class RunQueue {
 		// head and remove on empty queue
 		Queue<Integer> emptyQueue = new QueueImpl<Integer>();
 		
-		System.out.println("Head and remove on empty queue\n");
+		System.out.println("\nHead and remove on empty queue\n");
 		try {
 			emptyQueue.head();
 		} catch (EmptyQueueException e) {

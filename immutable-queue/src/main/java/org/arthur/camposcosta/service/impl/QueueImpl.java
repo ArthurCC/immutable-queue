@@ -11,11 +11,15 @@ import org.arthur.camposcosta.service.Queue;
  * The class is declared as final so that no child can be created
  * @author Arthur
  *
- * @param <T>
+ * @param <T> the type of the elements in the queue
  */
 public final class QueueImpl<T> implements Queue<T> {
 
+	/**
+	 * serialId
+	 */
 	private static final int HEAD_ID = 0;
+	
 	/**
 	 * queueList representing the elements of the queue
 	 * We use a LinkedList because it's an implementation of the class java.util.Queue
@@ -32,6 +36,10 @@ public final class QueueImpl<T> implements Queue<T> {
 		queueList = new LinkedList<T>();
 	}
 	
+	/**
+	 * Constructor with a list of elements to add to the queue as parameter
+	 * @param queueList the list of element to add to the Queue
+	 */
 	public QueueImpl(Collection<T> queueList) {
 		// If queueList is null we will have an empty queue
 		this();
@@ -43,7 +51,7 @@ public final class QueueImpl<T> implements Queue<T> {
 	/**
 	 * Add an element to the end of the queue, and returns the new queue
 	 * We create a copy because we don't want to modify the current object as it is immutable
-	 * @param t
+	 * @param t the element to add
 	 * @return the new queue
 	 */
 	public Queue<T> enQueue(T t) {
@@ -57,6 +65,7 @@ public final class QueueImpl<T> implements Queue<T> {
      * Removes the element at the beginning of the immutable queue, and returns the new queue.
      * We create a copy because we don't want to modify the current object as it is immutable
      * @return the new queue
+     * @throws EmptyQueueException if the queue is empty
      */
 	public Queue<T> deQueue() throws EmptyQueueException {
 		// if the queue is empty we throw an Exception
@@ -72,7 +81,8 @@ public final class QueueImpl<T> implements Queue<T> {
 
 	/**
      * Get the element at the beginning of the queue
-     * @return
+     * @return the new queue
+     * @throws EmptyQueueException if the queue is empty
      */
 	public T head() throws EmptyQueueException {
 		// if the queue is empty we throw an Exception
