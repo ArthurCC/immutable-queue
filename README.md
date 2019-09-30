@@ -1,7 +1,7 @@
 # immutable-queue
 Implementation of an immutable queue in Java.
 
-This project was made using Eclipse  to work with JDK 1.8
+This project was made using Eclipse 2019-09 and is intended to work with JDK 1.8
 
 To run this project on your local machine :
 1) Checkout from github URI https://github.com/ArthurCC/immutable-queue.git
