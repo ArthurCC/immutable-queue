@@ -23,11 +23,6 @@ import junit.framework.TestCase;
  */
 public class QueueImplTest extends TestCase {
 
-	@Before
-	protected void setUp() throws Exception {
-		super.setUp();
-	}
-
 	/**
 	 * Test of the constructor with no paral
 	 */
